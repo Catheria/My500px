@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90EE09808C9F1F40B2E6697 /* Pods_My500px.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAA42E700321F401C3AE334 /* Pods_My500px.framework */; };
 		E9A1588C1F1BBDEA000A0778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A1588B1F1BBDEA000A0778 /* AppDelegate.swift */; };
 		E9A1588E1F1BBDEA000A0778 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A1588D1F1BBDEA000A0778 /* ViewController.swift */; };
 		E9A158911F1BBDEA000A0778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A1588F1F1BBDEA000A0778 /* Main.storyboard */; };
 		E9A158931F1BBDEA000A0778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A158921F1BBDEA000A0778 /* Assets.xcassets */; };
 		E9A158961F1BBDEA000A0778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A158941F1BBDEA000A0778 /* LaunchScreen.storyboard */; };
+		E9A1589E1F1BBEF9000A0778 /* CLCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A1589D1F1BBEF9000A0778 /* CLCollection.framework */; };
+		E9A158A21F1BBF92000A0778 /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A158A11F1BBF92000A0778 /* CollectionController.swift */; };
+		E9A158A41F1BBFAE000A0778 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A158A31F1BBFAE000A0778 /* CollectionCell.swift */; };
+		E9A158A61F1BBFF0000A0778 /* CLReuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A158A51F1BBFF0000A0778 /* CLReuseView.swift */; };
+		E9A158A81F1BC043000A0778 /* CloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A158A71F1BC043000A0778 /* CloseView.swift */; };
+		E9A158AA1F1BC062000A0778 /* 500px.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A158A91F1BC062000A0778 /* 500px.swift */; };
+		E9A158AC1F1BC076000A0778 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A158AB1F1BC076000A0778 /* Session.swift */; };
+		E9A158AE1F1BC0FE000A0778 /* CLCollection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9A1589D1F1BBEF9000A0778 /* CLCollection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E9A158AF1F1BC0FE000A0778 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9A158AE1F1BC0FE000A0778 /* CLCollection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		69A861A6116C107A9F13FB31 /* Pods-My500px.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My500px.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My500px/Pods-My500px.debug.xcconfig"; sourceTree = "<group>"; };
+		AE72CA4BC3AB197798B38C0E /* Pods-My500px.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My500px.release.xcconfig"; path = "Pods/Target Support Files/Pods-My500px/Pods-My500px.release.xcconfig"; sourceTree = "<group>"; };
+		BFAA42E700321F401C3AE334 /* Pods_My500px.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My500px.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A158881F1BBDEA000A0778 /* My500px.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My500px.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A1588B1F1BBDEA000A0778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9A1588D1F1BBDEA000A0778 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +48,13 @@
 		E9A158921F1BBDEA000A0778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9A158951F1BBDEA000A0778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A158971F1BBDEA000A0778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A1589D1F1BBEF9000A0778 /* CLCollection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CLCollection.framework; sourceTree = "<group>"; };
+		E9A158A11F1BBF92000A0778 /* CollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionController.swift; sourceTree = "<group>"; };
+		E9A158A31F1BBFAE000A0778 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		E9A158A51F1BBFF0000A0778 /* CLReuseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLReuseView.swift; sourceTree = "<group>"; };
+		E9A158A71F1BC043000A0778 /* CloseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseView.swift; sourceTree = "<group>"; };
+		E9A158A91F1BC062000A0778 /* 500px.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 500px.swift; sourceTree = "<group>"; };
+		E9A158AB1F1BC076000A0778 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +62,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90EE09808C9F1F40B2E6697 /* Pods_My500px.framework in Frameworks */,
+				E9A1589E1F1BBEF9000A0778 /* CLCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EC4FE0A33E33976C65D8455 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69A861A6116C107A9F13FB31 /* Pods-My500px.debug.xcconfig */,
+				AE72CA4BC3AB197798B38C0E /* Pods-My500px.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E9A1587F1F1BBDEA000A0778 = {
 			isa = PBXGroup;
 			children = (
 				E9A1588A1F1BBDEA000A0778 /* My500px */,
 				E9A158891F1BBDEA000A0778 /* Products */,
+				6EC4FE0A33E33976C65D8455 /* Pods */,
+				F0E79DAFCA82E97291E03381 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +101,28 @@
 			isa = PBXGroup;
 			children = (
 				E9A1588B1F1BBDEA000A0778 /* AppDelegate.swift */,
+				E9A158A71F1BC043000A0778 /* CloseView.swift */,
 				E9A1588D1F1BBDEA000A0778 /* ViewController.swift */,
+				E9A158A11F1BBF92000A0778 /* CollectionController.swift */,
+				E9A158A31F1BBFAE000A0778 /* CollectionCell.swift */,
+				E9A158A51F1BBFF0000A0778 /* CLReuseView.swift */,
+				E9A158A91F1BC062000A0778 /* 500px.swift */,
+				E9A158AB1F1BC076000A0778 /* Session.swift */,
 				E9A1588F1F1BBDEA000A0778 /* Main.storyboard */,
 				E9A158921F1BBDEA000A0778 /* Assets.xcassets */,
 				E9A158941F1BBDEA000A0778 /* LaunchScreen.storyboard */,
 				E9A158971F1BBDEA000A0778 /* Info.plist */,
+				E9A1589D1F1BBEF9000A0778 /* CLCollection.framework */,
 			);
 			path = My500px;
+			sourceTree = "<group>";
+		};
+		F0E79DAFCA82E97291E03381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFAA42E700321F401C3AE334 /* Pods_My500px.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +132,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9A1589A1F1BBDEA000A0778 /* Build configuration list for PBXNativeTarget "My500px" */;
 			buildPhases = (
+				C80408905594678E3D744306 /* [CP] Check Pods Manifest.lock */,
 				E9A158841F1BBDEA000A0778 /* Sources */,
 				E9A158851F1BBDEA000A0778 /* Frameworks */,
 				E9A158861F1BBDEA000A0778 /* Resources */,
+				CBB8B6E3FF1A3FAFE35B8D92 /* [CP] Embed Pods Frameworks */,
+				EE9E303BECA2EDFA3130BA51 /* [CP] Copy Pods Resources */,
+				E9A158AF1F1BC0FE000A0778 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +197,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C80408905594678E3D744306 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB8B6E3FF1A3FAFE35B8D92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My500px/Pods-My500px-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE9E303BECA2EDFA3130BA51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My500px/Pods-My500px-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9A158841F1BBDEA000A0778 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A158AA1F1BC062000A0778 /* 500px.swift in Sources */,
+				E9A158A61F1BBFF0000A0778 /* CLReuseView.swift in Sources */,
 				E9A1588E1F1BBDEA000A0778 /* ViewController.swift in Sources */,
+				E9A158A21F1BBF92000A0778 /* CollectionController.swift in Sources */,
+				E9A158AC1F1BC076000A0778 /* Session.swift in Sources */,
 				E9A1588C1F1BBDEA000A0778 /* AppDelegate.swift in Sources */,
+				E9A158A41F1BBFAE000A0778 /* CollectionCell.swift in Sources */,
+				E9A158A81F1BC043000A0778 /* CloseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +378,14 @@
 		};
 		E9A1589B1F1BBDEA000A0778 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69A861A6116C107A9F13FB31 /* Pods-My500px.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K96TFH7FF2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/My500px",
+				);
 				INFOPLIST_FILE = My500px/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maile.My500px;
@@ -272,9 +396,14 @@
 		};
 		E9A1589C1F1BBDEA000A0778 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE72CA4BC3AB197798B38C0E /* Pods-My500px.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K96TFH7FF2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/My500px",
+				);
 				INFOPLIST_FILE = My500px/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maile.My500px;
@@ -302,6 +431,7 @@
 				E9A1589C1F1BBDEA000A0778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

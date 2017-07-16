@@ -1,0 +1,10 @@
+framework module CLCollection {
+  umbrella header "CLCollection.h"
+
+  export *
+  module * { export * }
+}
+
+module CLCollection.Swift {
+    header "CLCollection-Swift.h"
+}
