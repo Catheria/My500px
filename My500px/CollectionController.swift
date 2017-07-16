@@ -44,7 +44,6 @@ class CollectionController: UIViewController, UICollectionViewDelegate, UICollec
     var collection: CLCollection!
     var titleLabel: UILabel!
     var descriptionLabel: UILabel!
-    private var arrAllStartingDownload = [Photo500px]()
     
     lazy var refresher: UIRefreshControl = {
         let refresher = UIRefreshControl()
@@ -74,7 +73,6 @@ class CollectionController: UIViewController, UICollectionViewDelegate, UICollec
     
     func reloadData() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.arrAllStartingDownload.removeAll()
             self.listPreview.removeAll()
             self.page = 1
             self.collectionView.reloadData()
@@ -152,9 +150,6 @@ class CollectionController: UIViewController, UICollectionViewDelegate, UICollec
             collection.decoratorView = [closeView, titleLabel, descriptionLabel]
             addTextAt(index: indexPath.row)
             
-            let blackView = UIView()
-            blackView.backgroundColor = UIColor.black
-            collection.dimmingView = blackView
             collection.present()
         }
     }
