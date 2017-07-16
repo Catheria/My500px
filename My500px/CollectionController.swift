@@ -85,29 +85,6 @@ class CollectionController: UIViewController, UICollectionViewDelegate, UICollec
         }
     }
     
-    func startLoadingImage(track: Photo500px, cell: CollectionCell) {
-        if !arrAllStartingDownload.contains(track) {
-            cacheQueue.async { [weak self] in
-                if let url = URL(string: track.previewURL) {
-                    do {
-                        self?.arrAllStartingDownload.append(track)
-                        let data = try Data(contentsOf: url)
-                        let image = UIImage(data: data)
-                        track.thumbnail = image
-                        DispatchQueue.main.async {
-                            let transition = CATransition()
-                            transition.duration = 0.25
-                            transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-                            transition.type = kCATransitionFade
-                            cell.imageView.layer.add(transition, forKey: "image")
-                            cell.imageView.image = image
-                        }
-                    } catch {}
-                }
-            }
-        }
-    }
-    
     func requestAPI(_ closure: @escaping () -> Void) {
         Session.requestCategory(category.name, page: String(page)) { (arrPhotos: [Photo500px]) in
             self.listPreview += arrPhotos

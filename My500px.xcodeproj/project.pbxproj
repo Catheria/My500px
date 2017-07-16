@@ -380,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69A861A6116C107A9F13FB31 /* Pods-My500px.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K96TFH7FF2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -398,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE72CA4BC3AB197798B38C0E /* Pods-My500px.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K96TFH7FF2;
 				FRAMEWORK_SEARCH_PATHS = (
